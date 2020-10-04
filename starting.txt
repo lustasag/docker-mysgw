@@ -1,1 +1,1 @@
-docker run -d --name=mysgw --device=/dev/spidev0.0 -p 5003:5003 --restart=always --privileged lustasag/mysgw
+docker run -d --name=mysgw --device=/dev/spidev0.0 -p 5003:5003 --mount source=mysgw-settings,target=/etc/mysgw --restart=always --privileged lustasag/mysgw
